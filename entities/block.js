@@ -1,3 +1,6 @@
+// NOTE:
+// Initially based on https://blog.educationecosystem.com/how-to-create-your-own-cryptocurrency-blockchain-in-node-js-3/
+
 
 var crypto = require('crypto')
 var sha256 = crypto.createHash('sha256')

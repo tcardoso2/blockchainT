@@ -11,13 +11,13 @@ let Block = require("../entities/block.js")
 let fs = require('fs')
 
 before(function(done) {
-  done();
-});
+  done()
+})
 
 after(function(done) {
   // here you can clear fixtures, etc.
-  done();
-});
+  done()
+})
 
 describe("A. Block tests:", function() {
   it("A block should contain index, previousHash, timestamp, data, hash and nonce fields", function () {
@@ -34,6 +34,6 @@ describe("A. Block tests:", function() {
     let block = new Block()
     expect(block).to.have.property('createHash')
     expect(block.createHash()).to.be.a('string')
-  });
-});
+  })
+})
 
