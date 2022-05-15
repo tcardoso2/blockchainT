@@ -28,6 +28,11 @@ describe("B. Blockchain tests:", function() {
     expect(chain.chain).to.be.an.instanceof(Array)
   })
   it("The buildGenesisBlock creates the first block of the chain and is of type Block", function () {
+    let chain = new Chain()    // buildGenesisBlock gets called upon instanciating the object
+    expect(chain).to.have.property('lastBlock')
+    expect(chain.lastBlock()).to.be.an.instanceof(Block)
+  })
+  xit("It should be possible to add a new block on the chain", function () {
     let chain = new Chain()
     chain.buildGenesisBlock()
     expect(chain).to.have.property('lastBlock')
