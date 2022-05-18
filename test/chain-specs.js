@@ -38,5 +38,6 @@ describe("B. Blockchain tests:", function() {
     expect(chain).to.have.property('lastBlock')
     expect(chain.lastBlock()).to.be.an.instanceof(Block)
   })
+  xit("It should not allow calling buildGenesisBlock after it has been called?")
 })
 
